@@ -1,0 +1,188 @@
+// out: null
+
+.linear(@color: #F5F5F5, @orientation: top, @start: #333333, @stop: #000000) {
+  background: @color;
+  background: -webkit-linear-gradient(@orientation, @start, @stop);
+  background:    -moz-linear-gradient(@orientation, @start, @stop);
+  background:     -ms-linear-gradient(@orientation, @start, @stop);
+  background:      -o-linear-gradient(@orientation, @start, @stop);
+  background:         linear-gradient(@orientation, @start, @stop);
+}
+.radial(@color: #F5F5F5, @orientation: center, @start: #333333, @stop: #000000) {
+  background: @color;
+  background: -webkit-radial-gradient(@orientation, @start, @stop);
+  background:    -moz-radial-gradient(@orientation, @start, @stop);
+  background:     -ms-radial-gradient(@orientation, @start, @stop);
+  background:      -o-radial-gradient(@orientation, @start, @stop);
+  background:         radial-gradient(@orientation, @start, @stop);
+}
+.bw-gradient(@color: #F5F5F5, @start: 0, @stop: 255) {
+  background: @color;
+  background: -webkit-gradient(linear,
+  left bottom,
+  left top,
+  color-stop(0, rgb(@start,@start,@start)),
+  color-stop(1, rgb(@stop,@stop,@stop)));
+  background: -ms-linear-gradient(bottom,
+  rgb(@start,@start,@start) 0%,
+  rgb(@start,@start,@start) 100%);
+  background: -moz-linear-gradient(center bottom,
+  rgb(@start,@start,@start) 0%,
+  rgb(@stop,@stop,@stop) 100%);
+}
+.bordered(@top-color: #EEE, @right-color: #EEE, @bottom-color: #EEE, @left-color: #EEE) {
+  border-top: solid 1px @top-color;
+  border-left: solid 1px @left-color;
+  border-right: solid 1px @right-color;
+  border-bottom: solid 1px @bottom-color;
+}
+.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+  -webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+.rounded(@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+  -webkit-border-top-right-radius:    @topright;
+  -moz-border-radius-topright:     @topright;
+  border-top-right-radius:    @topright;
+  -webkit-border-bottom-right-radius: @bottomright;
+  -moz-border-radius-bottomright:  @bottomright;
+  border-bottom-right-radius: @bottomright;
+  -webkit-border-bottom-left-radius:  @bottomleft;
+  -moz-border-radius-bottomleft:   @bottomleft;
+  border-bottom-left-radiustranslate3d:  @bottomleft;
+  -webkit-border-top-left-radius:     @topleft;
+  -moz-border-radius-topleft:      @topleft;
+  border-top-left-radius:     @topleft;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+.opacity(@opacity: 0.5) {
+  -webkit-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -moz-opacity: @opacity;
+  opacity: @opacity;
+}
+.transition-duration(@duration: 0.2s) {
+  -webkit-transition-duration: @duration;
+  -moz-transition-duration: @duration;
+  transition-duration: @duration;
+}
+.rotate(@deg:5deg){
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  transform: rotate(@deg);
+}
+.scale(@ratio:1.5){
+  -webkit-transform:scale(@ratio);
+  -moz-transform:scale(@ratio);
+  transform:scale(@ratio);
+}
+
+.transition(@args:all 0.2s ease-in-out) {
+  -webkit-transition: @args;
+  -moz-transition: @args;
+  transition: @args;
+}
+.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+}
+.box-shadow(@arguments) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+.text-shadow(@args:0 0 5px rgba(0,0,0,0.6)) {
+  -webkit-text-shadow: @args;
+  -moz-text-shadow: @args;
+  -o-text-shadow: @args;
+  text-shadow: @args;
+}
+.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+  -webkit-column-width: @colwidth;
+  -moz-column-width: @colwidth;
+  column-width: @colwidth;
+  -webkit-column-count: @colcount;
+  -moz-column-count: @colcount;
+  column-count: @colcount;
+  -webkit-column-gap: @colgap;
+  -moz-column-gap: @colgap;
+  column-gap: @colgap;
+  -webkit-column-rule-color: @columnRuleColor;
+  -moz-column-rule-color: @columnRuleColor;
+  column-rule-color: @columnRuleColor;
+  -webkit-column-rule-style: @columnRuleStyle;
+  -moz-column-rule-style: @columnRuleStyle;
+  column-rule-style: @columnRuleStyle;
+  -webkit-column-rule-width: @columnRuleWidth;
+  -moz-column-rule-width: @columnRuleWidth;
+  column-rule-width: @columnRuleWidth;
+}
+.translate(@x:0, @y:0) {
+  -webkit-transform: translate(@x, @y);
+  -moz-transform: translate(@x, @y);
+  -ms-transform: translate(@x, @y);
+  -o-transform: translate(@x, @y);
+  transform: translate(@x, @y);
+}
+
+.translate3d(@x:0, @y:0, @z:0) {
+  -webkit-transform: translate3d(@x, @y, @z);
+  -moz-transform: translate3d(@x, @y, @z);
+  -ms-transform: translate3d(@x, @y, @z);
+  -o-transform: translate3d(@x, @y, @z);
+  transform: translate3d(@x, @y, @z);
+}
+.perspective(@args) {
+  -moz-perspective: @args;
+  -webkit-perspective: @args;
+  -o-perspective: @args;
+  -ms-perspective: @args;
+  perspective: @args;
+}
+.transform(@args) {
+  -moz-transform: @args;
+  -webkit-transform: @args;
+  -o-transform: @args;
+  -ms-transform: @args;
+  transform: @args;
+}
+.transform-origin(@args) {
+  -moz-transform-origin: @args;
+  -webkit-transform-origin: @args;
+  -o-transform-origin: @args;
+  -ms-transform-origin: @args;
+  transform-origin: @args;
+}
+.transform-style(@args) {
+  -moz-transform-style: @args;
+  -webkit-transform-style: @args;
+  -o-transform-style: @args;
+  -ms-transform-style: @args;
+  transform-style: @args;
+}
+
+.box-sizing(@argument:border-box) {
+  -webkit-box-sizing: @argument;
+  -moz-box-sizing: @argument;
+  box-sizing: @argument;
+}
+
+.filter(@args) {
+  -webkit-filter: @args;
+  -moz-filter: @args;
+  -ms-filter: @args;
+  -o-filter: @args;
+  filter: @args;
+}
+
+.filter_blur(@def: blur(5px)) {
+  .filter(@def);
+}

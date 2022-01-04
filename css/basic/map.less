@@ -1,0 +1,81 @@
+// out: null
+
+#canvas_holder {
+  position:relative;
+  display:block;
+  width:100%;
+  height:350px;
+  #all_feat_box {
+    position:absolute;
+    right:50%;
+    z-index:50;
+    .inner-insert {
+      position:relative;
+      width:200px;
+      height:200px;
+      margin-right:480px;
+      overflow:hidden;
+      img {
+        width:100%;
+        height:auto;
+        display:none;
+      }
+    }
+  }
+  #map_canvas {
+    position:relative;
+    width:100%;
+    height:350px;
+    .info-window-content {
+      display:block;
+      padding:10px;
+      p {
+        white-space:nowrap;
+      }
+      a {
+        color:@g3;
+        .transition;
+        &:hover {
+          color:@b;
+        }
+      }
+    }
+  }
+  .holder-container {
+    position:absolute;
+    top:10px;
+    left:10px;
+    z-index:500;
+    ul#holder {
+      margin:0;
+      padding:0;
+      li {
+        position:relative;
+        display:block;
+        margin:0 0 10px 0;
+        a {
+          display:block;
+          width:30px;
+          height:30px;
+          color:@info;
+          background: @w;
+          span {
+            font-size:12pt;
+            line-height: 30px;
+            vertical-align: middle;
+            text-align: center;
+            width:30px;
+            &.fa-map-marker {
+              font-size:16pt;
+            }
+          }
+          .transition;
+          &:hover {
+            color:@w;
+            background:@info;
+          }
+        }
+      }
+    }
+  }
+}

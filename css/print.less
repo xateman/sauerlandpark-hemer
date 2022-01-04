@@ -1,0 +1,158 @@
+// out: ../css/print.css, compress: true
+
+@import "basic/lib";
+
+html,
+body {
+  background-image:none !important;
+}
+
+body {
+  font-family:'Ruda',sans-serif !important;
+  color: @b;
+  background-color:white;
+  text-align: justify;
+  ul {
+    list-style: none !important;
+    li {
+      a {
+        display: none !important;
+      }
+    }
+  }
+  a:link, a:visited {
+  text-decoration: underline;
+  text-decoration-style: dotted !important;
+  color: @b;
+  }
+}
+
+header, aside, footer {
+  display: none;
+}
+
+
+#page-wrap, #content {
+  width: 100% !important; 
+  margin: 0 !important; 
+  padding: 0 !important;
+}
+
+section {
+  margin: 0 !important;
+  padding: 0 0 25px 0 !important;
+  height: auto !important;
+  &:not(:first-of-type, :last-of-type) {
+    margin: 0 0 50px 0 !important;
+    padding: 0 0 50px 0 !important;
+    border-bottom: 3px solid @b !important;
+  }
+  
+  h1 {
+        padding: 1.25em 0 !important;
+        margin:0 !important;
+  }
+  .content-wrap {
+    padding: 0 !important;
+    margin: 0 !important;
+    .content {
+      font-size: 1.4em !important;
+      padding-bottom: 20px !important;
+      img {
+        &.alignright {
+          float: right !important;
+          padding: 2em 1em !important;
+        }
+      }
+      #infotable {
+        img {
+          background: @g1 !important;
+          margin: 1em 0;
+          padding: 0.5em;
+        }
+      }
+      a[title = "Sylter-Trading Anteilschein"] {
+        display: none !important;
+      }
+      ul {
+        &.sub-a {
+          margin: 0 !important;
+          padding: 0 !important;
+          img {
+            max-width: 100% !important;
+          }
+        }
+        &.sub-b {
+          display: none !important;
+        }
+      }
+    }
+    .lb-close {
+      display: none;
+    }
+  }
+  .page-head {
+    font-size: 1.6em !important;
+    padding: 0 !important;
+  }
+  .pwc__gallery {
+    height: auto !important;
+    display: block !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    .clear;
+    .pwcg__item {
+      float: left !important; 
+      width: 50% !important;
+      display: inline-block !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  &#EP0 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto !important;
+    padding: 0;
+    .branding {
+      font-size: 1.1em;
+      display: inline-block;
+      margin: 0 auto !important;
+      padding: 0 !important;
+      &:before {
+        content: " "; 
+      }
+      &:after {
+         content: " ";
+      }
+    }
+  }
+  &#EP1 {
+    .content { 
+    /*
+      h1 {
+        padding: 1.25em 0 !important;
+        margin:0 !important;
+      }
+    */
+    }
+  }
+  &#EP4 {
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+  &#EP5 {
+    display: none;
+  }
+  &#EP6 {
+    
+  }
+}
+

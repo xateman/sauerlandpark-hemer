@@ -1,0 +1,214 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DSV2015\n"
+"POT-Creation-Date: 2015-10-29 12:04+0100\n"
+"PO-Revision-Date: 2015-10-29 12:04+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: archive.php:51 archive.php:62 page-aktuelles.php:48 page-aktuelles.php:59
+#: page-startseite.php:89 page-startseite.php:100
+msgid "Artikel Download"
+msgstr "Article Download"
+
+#: archive.php:73
+msgid "Aktuell sind keine Artikel vorhanden."
+msgstr "There are currently no articles available."
+
+#: functions.php:53
+msgid "weiterlesen"
+msgstr "read more"
+
+#: functions.php:81
+msgid "Januar"
+msgstr "January"
+
+#: functions.php:82
+msgid "Februar"
+msgstr "February"
+
+#: functions.php:83
+msgid "März"
+msgstr "March"
+
+#: functions.php:84
+msgid "April"
+msgstr "April"
+
+#: functions.php:85
+msgid "Mai"
+msgstr "May"
+
+#: functions.php:86
+msgid "Juni"
+msgstr "June"
+
+#: functions.php:87
+msgid "Juli"
+msgstr "July"
+
+#: functions.php:88
+msgid "August"
+msgstr "August"
+
+#: functions.php:89
+msgid "September"
+msgstr "September"
+
+#: functions.php:90
+msgid "Oktober"
+msgstr "October"
+
+#: functions.php:91
+msgid "November"
+msgstr "November"
+
+#: functions.php:92
+msgid "Dezember"
+msgstr "December"
+
+#: header.php:15
+#, php-format
+msgid "Seite %s"
+msgstr "Page %s"
+
+#: header.php:85
+msgid "Suchbegriff"
+msgstr "Searchterm"
+
+#: header.php:86
+msgid "Suchen"
+msgstr "Search"
+
+#: header.php:101
+msgid "Login"
+msgstr "Login"
+
+#: header.php:104
+msgid "kontakt"
+msgstr "contact"
+
+#: header.php:105
+msgid "Kontakt"
+msgstr "Contact"
+
+#: page-contact-map.php:56
+msgid "Zur Routenplanung"
+msgstr "Directions"
+
+#: page-mitglieder.php:45
+msgid "Vollmitglieder"
+msgstr "Full Members"
+
+#: page-mitglieder.php:91
+msgid "Assoziierte Mitglieder"
+msgstr "Associate Members"
+
+#: page-startseite.php:64
+msgid "Aktuelles"
+msgstr "News"
+
+#: page-startseite.php:114
+#, php-format
+msgid "<a href=\"%s/aktuelles/\">Archiv</a>"
+msgstr "<a href=\"%s/news/\">Archive</a>"
+
+#: page-startseite.php:122
+msgid "Termine"
+msgstr "Events"
+
+#: page-startseite.php:182 page-termine.php:132
+msgid "Routenplaner"
+msgstr "Directions"
+
+#: page-startseite.php:184 page-startseite.php:189 page-termine.php:134
+#: page-termine.php:139
+msgid "Link zur Messe"
+msgstr "Link to exhibition"
+
+#: page-startseite.php:202
+#, php-format
+msgid "<a href=\"%s/termine/\">Zukünftige Termine</a>"
+msgstr "<a href=\"%s/events/\">Future events</a>"
+
+#: search.php:10
+msgid "Suche"
+msgstr "Search"
+
+#: search.php:21
+msgid "Suchergebnisse für"
+msgstr "Search result for"
+
+#: search.php:32
+msgid "Keine Treffer für"
+msgstr "No matches for:"
+
+#: search.php:34
+#, php-format
+msgid ""
+"<p>Leider war Ihre Suche ohne Ergebnis.</p><p>Falls Sie etwas auf unserer "
+"Seite vermissen oder eine Frage haben freue wir uns auf <a href=\"%s/kontakt/"
+"\">Ihre Nachricht</a>."
+msgstr ""
+"<p> Unfortunately your search was without result. </p><p> If you miss "
+"something on our site, or have a question, we look forward to <a href=\"%s/"
+"kontakt/\">your message</a> ."
+
+#: sidebar-blog.php:9
+#, php-format
+msgid "<a href=\"%s/aktuelles/\"><h3>Archiv</h3></a>"
+msgstr "<a href=\"%s/news/\"><h3>Archive</h3></a>"
+
+#: sidebar-calendar.php:9
+#, php-format
+msgid "<a href=\"%s/termine/\"><h3>Termine</h3></a>"
+msgstr "<a href=\"%s/events/\"><h3>Events</h3></a>"
+
+#: single-event.php:18
+#, php-format
+msgid "<a href=\"%s/termine/\">Termine</a>"
+msgstr "<a href=\"%s/events/\">Events</a>"
+
+#: single-press.php:18
+#, php-format
+msgid "<a href=\"%s/presse/\">Presse</a>"
+msgstr "<a href=\"%s/press/\">Press</a>"
+
+#. Theme Name of the plugin/theme
+msgid "DSV2015"
+msgstr "DSV2015"
+
+#. Description of the plugin/theme
+msgid "Drahtseil e.V. Theme 2015"
+msgstr "Drahtseil e.V. Theme 2015"
+
+#. Author of the plugin/theme
+msgid "aliaz werbeagentur"
+msgstr "aliaz werbeagentur"
+
+#. Author URI of the plugin/theme
+msgid "https://www.aliaz.de"
+msgstr "https://www.aliaz.de"
+
+#~ msgid "<a href=\"%s/aktuelles/\">Aktuelles</a>"
+#~ msgstr "<a href=\"%s/news/\">News</a>"
+
+#~ msgid "<a href=\"#\">Login</a>"
+#~ msgstr "<a href=\"#\">Login</a>"
+
+#~ msgid "<a href=\"%s/kontakt/\">Kontakt</a>"
+#~ msgstr "<a href=\"%s/contact/\">Contact</a>"
