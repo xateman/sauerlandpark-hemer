@@ -20,12 +20,11 @@
           ];
           $sponsors = new WP_Query( $args );
 
-          set_transient( 'sponors_frontpage_cache', $sponsors, LONG_TRANSIENT );
+          set_transient( 'sponors_frontpage_cache', $sponsors, MID_TRANSIENT );
         }
         if ( $sponsors->have_posts() ) {
-          echo '<div class="content-wrap sponsors-wrap grid-s-2 grid-m-5 grid-l-10">';
-          while ($sponsors->have_posts()) {
-            $sponsors->the_post();
+          echo '<div class="content-wrap sponsors-wrap sponsors-footer-wrap">';
+          while ($sponsors->have_posts()) { $sponsors->the_post();
             echo '<div class="sponsor">';
             if (get_field('sponsor_link')) {
               echo '<a href="' . get_field('sponsor_link') . '" target="_blank">';

@@ -1212,9 +1212,15 @@ header.main {
     }
   }
   .sponsors-wrap {
-    justify-items: center;
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
-    grid-gap: 50px;
+    justify-content: space-between;
+    gap: 50px;
+    &.sponsors-footer-wrap {
+      gap: 40px;
+      flex-flow: row nowrap;
+    }
     .sponsor {
       img {
         max-width: 100%;

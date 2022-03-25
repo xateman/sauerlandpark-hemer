@@ -1937,9 +1937,15 @@ header.main .header-inner-wrap nav#main-menu .contact-menu .item-groups.right-it
   text-transform: uppercase;
 }
 .sponsors-container .sponsors-wrap {
-  justify-items: center;
+  display: flex;
+  flex-flow: row wrap;
   align-items: center;
-  grid-gap: 50px;
+  justify-content: space-between;
+  gap: 50px;
+}
+.sponsors-container .sponsors-wrap.sponsors-footer-wrap {
+  gap: 40px;
+  flex-flow: row nowrap;
 }
 .sponsors-container .sponsors-wrap .sponsor img {
   max-width: 100%;

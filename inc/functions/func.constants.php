@@ -127,7 +127,7 @@
   $priceSeason = [
     'winter1' => [
       'start' => date('Y') . '-01-01',
-      'end'   => date('Y') . '-03-14'
+      'end'   => date('Y') . '-03-13'
     ],
     'winter2' => [
       'start' => date('Y') . '-10-29',

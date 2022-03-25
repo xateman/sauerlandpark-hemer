@@ -253,7 +253,7 @@
         echo '<div class="sponsors-container home">';
         echo '<div class="inner-container">';
         echo '<h2>Vielen Dank an Unsere Unterstützer</h2>';
-        echo '<div class="sponsors-wrap grid-s-2 grid-m-5">';
+        echo '<div class="sponsors-wrap">';
         while ( $sponsors->have_posts() ) { $sponsors->the_post();
           echo '<div class="sponsor">';
           if ( $image = get_field('sponsor_img') ) {

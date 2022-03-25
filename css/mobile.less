@@ -1102,9 +1102,16 @@ header.main {
     }
   }
   .sponsors-wrap {
-    justify-items: center;
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
-    grid-gap: 50px;
+    justify-content: space-between;
+    gap: 50px;
+    &.sponsors-footer-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 40px;
+    }
     .sponsor {
       img {
         max-width: 100%;
